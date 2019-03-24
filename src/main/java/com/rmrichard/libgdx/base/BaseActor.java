@@ -35,7 +35,7 @@ public class BaseActor extends Actor {
         Color c = getColor();
         batch.setColor(c.r, c.g, c.b, c.a);
         if (isVisible()) {
-            batch.draw(region, getX(), getY(), getOriginX(), getOriginX(),
+            batch.draw(region, getX(), getY(), getOriginX(), getOriginY(),
                 getWidth(), getHeight(), getScaleX(), getScaleY(), getRotation());
         }
     }
